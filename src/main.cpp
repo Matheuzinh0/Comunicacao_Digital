@@ -13,8 +13,8 @@ int main() {
     std::vector<double> askSignal = Modulator::modulateASK(bits);
     Utils::exportToCSV(askSignal, "ask_signal.csv");
 
-    // Adiciona ruído ao sinal ASK
-    std::vector<double> noisySignal = Utils::addNoise(askSignal, 0.1);
+    // Adiciona ruído ao sinal ASK (nível de ruído reduzido)
+    std::vector<double> noisySignal = Utils::addNoise(askSignal, 0.05);
     Utils::exportToCSV(noisySignal, "noisy_ask_signal.csv");
 
     // Demodulação ASK
