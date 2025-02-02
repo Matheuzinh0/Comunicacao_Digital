@@ -8,7 +8,9 @@ Um simulador de modulação digital em C++ que implementa ASK, FSK e PSK, com fu
    ```bash
    git clone https://github.com/seu-usuario/Comunicacao_Digital.git
    cd Comunicacao_Digital
-
+   make
+   export QT_QPA_PLATFORM=xcb
+   ./bin/Comunicacao_Digital
 ## Visualização dos Sinais
 
 O projeto usa GNUplot para gerar gráficos dos sinais modulados e demodulados. Após executar o programa, uma janela do GNUplot será aberta com os seguintes gráficos:
