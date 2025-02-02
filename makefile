@@ -6,7 +6,7 @@ BIN_DIR = bin
 
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
-TARGET = $(BIN_DIR)/TelecomSimulator
+TARGET = $(BIN_DIR)/Comunicacao_Digital
 
 all: $(TARGET)
 
